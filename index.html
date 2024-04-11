@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eye Disease Prediction</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="content">
+        <div id="home" class="page home-page">
+            <div class="content">
+                <h1 id="mainText"></h1>
+                <p class="home-para">Get accurate predictions for eye diseases.</p>
+                <button id="predictionBtn">Prediction</button>
+            </div>
+        </div>
+
+        <div id="about" class="page">
+            <div class="about-nav">
+                <button id="abstractBtn" class="active">Abstract</button>
+                <button id="teamBtn">Team Members</button>
+            </div>
+            <div id="abstract" class="about-section">
+                <h2>Abstract</h2>
+                <p>Glaucoma is the term used to describe either the accumulated loss of retinal cells inside the
+                    optic nerve or the gradual visual loss brought on by optic neuropathy. Glaucoma is a disease
+                    that relates to the vision of the human eye. This disease is considered an irreversible disease
+                    that results in vision deterioration. They don't have any early warning indications of this
+                    glaucoma. We might not notice a change in your vision because the effect is so subtle. Many
+                    deep learning (DL) models have been developed for the proper detection of glaucoma so far.
+                    So, we present an architecture for proper glaucoma detection based on deep learning by
+                    making use of the convolutional neural network (CNN). The differentiation between the
+                    patterns formed for glaucoma and non-glaucoma can find out with the use of CNN. The CNN
+                    provides a hierarchical structure of the images for differentiation. Utilizing the current
+                    method, the sickness is detected. Whether a patient has glaucoma or not is determined by the
+                    optic cup to the disc ratio. The diagnosis is enhanced by the integration of an image data
+                    generator method of data augmentation. The outcomes demonstrate that the proposed model,
+                    which outperformed many other existing algorithms, attained 98% accuracy. </p>
+            </div>
+            <div id="team" class="about-section" style="display: none;">
+                <h2>Team Members</h2>
+                <ul>
+                    <li>Team member 1</li>
+                    <li>Team member 2</li>
+                    <!-- Add more team members as needed -->
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div id="prediction" class="page prediction-page">
+            <div class="prediction-container">
+                <input type="file" id="imageInput" accept="image/*" style="display: none;">
+                <label for="imageInput" class="upload-btn">
+                    <div class="circle-btn">Upload Image</div>
+                </label>
+                <p class="upload-text">Click the button to upload an image for prediction</p>
+            </div>
+            <div id="uploded-img">
+
+            </div>
+        </div>
+    
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#prediction">Prediction</a></li>
+        </ul>
+    </nav>
+
+    <script src="index.js"></script>
+</body>
+</html>
